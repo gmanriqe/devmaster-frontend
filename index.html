@@ -13,6 +13,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!-- Reset CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <!-- CSS -->
@@ -22,59 +25,56 @@
 
 <body>
     <!-- banner -->
-    <div class="banner">
-        <div class="container">
-            <div class="row">
-                <!-- menu -->
-                <nav class="navbar navbar-expand-md navbar-light d-flex justify-content-end" id="navBar">
-                    <!-- <a class="navbar-brand d-md-none" href="#"><img src="img/logo-nav.png" alt=""></a> -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav d-flex justify-content-between align-items-center">
-                            <li class="nav-item">
-                                <!--active-->
-                                <a class="nav-link" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sobre Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Servicios</a>
-                            </li>
-                            <li class="nav-item d-none d-md-block">
-                                <a class="nav-link disabled" href="#"><img src="img/logo-nav.png" alt=""></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Equipo</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contactenos</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- logo -->
-                <div class="logo">
-                    <img class="logo__animate" src="img/logo-animated.png" alt="">
+    <div class="banner" id="inicio">
+        <!-- menu -->
+        <div class="menu">
+            <nav class="navbar navbar-expand-md navbar-light d-flex justify-content-end" id="navBar">
+                <!-- <a class="navbar-brand d-md-none" href="#"><img src="img/logo-nav.png" alt=""></a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="menu-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex justify-content-between align-items-center">
+                        <li class="nav-item">
+                            <!--active-->
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#history">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Precios</a>
+                        </li>
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link" href="#inicio"><img src="img/logo-nav.png" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#product">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contactenos</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </nav>
+        </div>
+        <!-- logo -->
+        <div class="logo">
+            <img class="logo__animate" src="img/logo-animated.png" alt="">
         </div>
     </div>
 
     <!-- history -->
-    <div class="main__section our__history">
+    <div class="main__section our__history" id="history">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section">
-                        <h3 class="section__title">SOBRE NOSOTROS<h3>
-
+                        <h2 class="section__title">SOBRE NOSOTROS<h2>
                                 <p class="section__subtitle">Berger BarberShop</p>
                                 <p class="section__description">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor eros
@@ -110,55 +110,55 @@
     </div>
 
     <!-- services -->
-    <div class="main__section">
+    <div class="main__section" id="service">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section">
-                        <h3 class="section__title">SERVICIOS<h3>
-                                <p class="section__subtitle">Nuestros Servicios y Precios</p>
+                        <h2 class="section__title">PRECIOS<h2>
+                                <p class="section__subtitle">Nuestros Precios</p>
                                 <p class="section__description">
                                     Wash + Cut, $13 . Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Vestibulum porttitor eros dolor. Nullam varius sem id neque tincidunt faucibus.
+                                    Vestibulum porttitor dolor.
                                 </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6 col-12">
                     <div class="services">
                         <img class="services__image" src="img/barber-chair-2.svg" alt="">
                         <h3 class="services__title">Hair Cut</h3>
                         <p class="services__price">Awesome and professional Haircut for only $15</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6 col-12">
                     <div class="services">
                         <img class="services__image" src="img/barber-chair.svg" alt="">
                         <h3 class="services__title">Moustache Trim</h3>
                         <p class="services__price">Awesome and professional Haircut for only $15</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6 col-12">
                     <div class="services">
                         <img class="services__image" src="img/barber-chair-3.svg" alt="">
                         <h3 class="services__title">Face Shave</h3>
                         <p class="services__price">Awesome and professional Haircut for only $15</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6 col-12">
                     <div class="services">
                         <img class="services__image" src="img/barber-chair-4.svg" alt="">
                         <h3 class="services__title">BreadTrim</h3>
                         <p class="services__price">Awesome and professional Haircut for only $15</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6 col-12">
                     <div class="services">
                         <img class="services__image" src="img/barber-chair-5.svg" alt="">
                         <h3 class="services__title">Clipper Cut</h3>
                         <p class="services__price">Awesome and professional Haircut for only $15</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6 col-12">
                     <div class="services">
                         <img class="services__image" src="img/barber-chair-6.svg" alt="">
                         <h3 class="services__title">Facial Massage</h3>
@@ -170,71 +170,113 @@
     </div>
 
     <!-- team -->
-    <div class="main__section team">
+    <div class="main__section team" id="team">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section">
-                        <h3 class="section__title">EQUIPO<h3>
-                                <p class="section__subtitle">Nuestros Representantes</p>
-                                <p class="section__description">
-                                    Conjunto de Profesionales altamente calificados y en constante capacitación, con
-                                    las ultimas tendencias.
-                                </p>
+                        <h2 class="section__title">EQUIPO<h2>
+                        <p class="section__subtitle">Nuestros Representantes</p>
+                        <p class="section__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor eros
+                            dolor. Nullam varius sem.
+                        </p>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="team">
                         <img class="team__image" src="img/team-1.jpg" alt="">
                         <h3 class="team__name">Lenny Smith</h3>
                         <p class="team__charge">Founder & Boss Barber</p>
+                        <div class="team__social">
+                            <a href="#NoHayEnlace"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#NoHayEnlace"><i class="fab fa-twitter"></i></a>
+                            <a href="#NoHayEnlace"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="team">
                         <img class="team__image" src="img/team-2.jpg" alt="">
                         <h3 class="team__name">John Smith</h3>
                         <p class="team__charge">Senior Barber</p>
+                        <div class="team__social">
+                            <a href="#NoHayEnlace"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#NoHayEnlace"><i class="fab fa-twitter"></i></a>
+                            <a href="#NoHayEnlace"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="team">
                         <img class="team__image" src="img/team-3.jpg" alt="">
                         <h3 class="team__name">Steven Brown</h3>
                         <p class="team__charge">Senior Barber</p>
+                        <div class="team__social">
+                            <a href="#NoHayEnlace"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#NoHayEnlace"><i class="fab fa-twitter"></i></a>
+                            <a href="#NoHayEnlace"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- products -->
-    <div class="main__section">
+    <!-- product -->
+    <div class="main__section product" id="product">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section">
-                        <h3 class="section__title">PRODUCTOS<h3>
-                        <p class="section__subtitle">Berger BarberShop</p>
-                        <p class="section__description">Tenemos los mejores productos para el cuidado personal.</p>
+                        <h2 class="section__title">PRODUCTOS<h2>
+                                <p class="section__subtitle">Alta Calidad</p>
+                                <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Vestibulum porttitor eros dolor. Nullam varius sem.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="product__container owl-carousel owl-theme">
+                        <div class="product__item">
+                            <img src="img/product-1.png" alt="">
+                        </div>
+                        <div class="product__item">
+                            <img src="img/product-2.png" alt="">
+                        </div>
+                        <div class="product__item">
+                            <img src="img/product-3.png" alt="">
+                        </div>
+                        <div class="product__item">
+                            <img src="img/product-1.png" alt="">
+                        </div>
+                        <div class="product__item">
+                            <img src="img/product-2.png" alt="">
+                        </div>
+                        <div class="product__item">
+                            <img src="img/product-3.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- contact Us -->
-    <div class="main__section contact">
+    <!-- contact -->
+    <div class="main__section contact" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section">
-                        <h3 class="section__title">Contactenos<h3>
-                        <p class="section__subtitle">Separe una Cita</p>
-                        <p class="section__description">Nos pondremos en contacto con usted a la brevedad posible</p>
+                        <h2 class="section__title">Contactenos<h2>
+                                <p class="section__subtitle">Separe una Cita</p>
+                                <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Vestibulum porttitor eros dolor. Nullam varius sem.</p>
                     </div>
                     <div class="col-md-6 offset-md-3">
-                        <form class="form" action="" method="POST">
+                        <form class="contact__form" action="" method="POST" autocomplete="off">
                             <div class="form-group">
                                 <label class="" for="name">Nombres y Apellidos</label>
                                 <input class="form-control" type="text" id="name" required>
@@ -248,36 +290,57 @@
                                 <input class="form-control" type="text" id="number" required>
                             </div>
                             <div class="form-group">
-                                <label class="" for="description">Description Cita</label>
-                                <textarea class=" form-control" type="text" id="description" required></textarea>
+                                <label class="" for="description">Descripción Cita</label>
+                                <textarea class="form-control" type="text" id="description" required></textarea>
                             </div>
-                            <input class="btn btn-primary" type="submit">
+                            <button class="btn btn-berge" type="submit">ENVIAR</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- google maps -->
+        <div class="maps" id="map"></div>
     </div>
 
-    <footer class="main__section">
+    <!-- footer -->
+    <footer class="main__section footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="footer d-flex justify-content-center">
+                    <div class="footer">
                         <p class="footer__text"><i class="fas fa-pencil-alt"></i> with <i class="fas fa-heart"></i> in
-                            <strong>Huacho</strong>.</p>
-                        <p class="footer__text"> Powered by <strong>GManriqe</strong></p>
+                            <strong>Dev Master</strong>. Powered by <a href="https://gmanriqe.github.io/miportafolio"
+                        target="_blank">GManriqe</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    
+    <div class="to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
     <!-- JS -->
     <script src="js/app.js"></script>
+    <script>
+        // Google Maps API
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: -11.1210825, lng: -77.5961367 },
+                zoom: 12
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAEa6buWcAL0V4Qwa3jbjggC7tUhGrz8M&callback=initMap">
+    </script>
 </body>
 
 </html>
