@@ -80,7 +80,8 @@ Banner - Navbar
 .menu.menu-animated {
   animation-name: menu-animate;
   animation-duration: 1.5s;
-  animation-iteration-count: 1; }
+  animation-iteration-count: 1;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15); }
 
 .menu .navbar {
   width: 100%;
